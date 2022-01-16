@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <table class="table table-bordered table-dark">
+    <thead>
+      <tr>
+        <th>S_no</th>
+        <th>line_of_business</th>
+        <th>revenue_type</th>
+        <th>product</th>
+        <th>Date</th>
+        <th>ACV</th>
+        <th>TCV</th>
+        <th>Revenue</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let x of TableData">
+      <tr>
+        <td>{{x.S_no}}</td>
+        <td>{{x.line_of_business}}</td>
+        <td>{{x.revenue_type}}</td>
+        <td>{{x.product}}</td>
+        <td>{{x.year}} {{x.month}}</td>
+        <td>{{x.acv}}</td>
+        <td>{{x.tcv}}</td>
+        <td>{{x.revenue}}</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/themes/bootstrap-table/bootstrap-table.min.js"></script>
+</body>
